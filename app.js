@@ -1,5 +1,5 @@
 import fs from "fs"
- let data=fs.readFile('demo.txt','utf-8',(err,data)=>{
+ let data=fs.readFileSync('demo.txt','utf-8',(err,data)=>{
     if(err){
         console.log("error");
         
@@ -9,4 +9,4 @@ import fs from "fs"
     }
  })
  console.log(data);
- 
+  let data1=fs.writeFileSync('vis.txt',"helllo vishnu")
