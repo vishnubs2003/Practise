@@ -1,10 +1,23 @@
-import http from 'http'
- const port=3000;
-let data =http.createServer((req,res)=>{
-    res.end("welcome to server");
-})
-data.listen(port,()=>{
-    console.log(`server is running in the port ${port}`);
+// import http from 'http'
+import fs from 'fs'
+//  const port=3000;
+// let data =http.createServer((req,res)=>{
+//     res.end("welcome to server");
+//     res.end(add())
+// })
+// data.listen(port,()=>{
+//     console.log(`server is running in the port ${port}`);
     
-})
-
+// })
+ async function add(){
+    let b=await fs.readFile('./vis.txt','utf-8',(err,data)=>{
+        if(err){
+            console.log("error");
+            
+        }else{
+            console.log(data);
+            
+        }
+    })
+ }
+add();
