@@ -8,8 +8,8 @@ import fs from "fs"
         
     }
  })
-//  console.log(data);
-//   let data1=fs.writeFileSync('vis.txt',"helllo vishnu")
+ console.log(data);
+  let data1=fs.writeFileSync('vis.txt',"helllo vishnu")
  let data2=fs.appendFile("vis.txt","\ngood morning",(err)=>{
     if(err){
         console.log("error");
@@ -32,3 +32,4 @@ async function write(){
     })
 }
 write()
+
