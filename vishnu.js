@@ -11,28 +11,28 @@ import fs from 'fs'
 // })
 
 
-//  async function add(){
-//     let b=await fs.readFile('./vis.txt','utf-8',(err,data)=>{
-//         if(err){
-//             console.log("error");
+ async function add(){
+    let b=await fs.readFile('./vis.txt','utf-8',(err,data)=>{
+        if(err){
+            console.log("error");
             
-//         }else{
-//             console.log(data);
+        }else{
+            console.log(data);
             
-//         }
-//     })
-//  }
-// add();
+        }
+    })
+ }
+add();
 
 
-//  async function wrt(){
-//     try{
-//     let c=await fs.writeFile('./vis.txt','okay bye friends')
-//     console.log("writed successfully");
+ async function wrt(){
+    try{
+    let c=await fs.writeFile('./vis.txt','okay bye friends')
+    console.log("writed successfully");
     
-//     }catch(err){
-//         console.log("error");
+    }catch(err){
+        console.log("error");
         
-//     }  
-//  }
-// wrt();
+    }  
+ }
+wrt();
