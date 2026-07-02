@@ -7,6 +7,7 @@ app.get('/user/:id',(req,res)=>{
     id: req.params.id,
     name: "abc",
     phno: "123456789",
+    email:"xxx@gmail.com",
     adrs: "xxxxxx"
 })
 })
