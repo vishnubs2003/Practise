@@ -30,7 +30,7 @@ add();
  async function wrt(){
     try{
     let c=await fs.writeFile('./vis.txt','okay bye friends')
-    console.log("writed successfully");
+    console.log("text writed successfully");
     
     }catch(err){
         console.log("error");
