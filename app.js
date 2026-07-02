@@ -26,7 +26,7 @@ import fs from "fs"
 async function write(){
     let d=await fs.readFile('vis.txt','utf-8',(err,data)=>{
         if(err){
-            console.log("error")
+            console.log("error something went wrong")
             
         }else{
             console.log(data);
